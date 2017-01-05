@@ -75,13 +75,7 @@ class DB
                 /*
                  * Standard MYSQL
                  * */
-//                self::$connectionString = 'mysql:host=' . self::$host . ';dbname=' . self::$dbName;
-
-                /*
-                 * Google App Engine SQL
-                 * */
-                self::$connectionString = 'mysql:unix_socket=/cloudsql/' . Config::$dbHost . ';dbname=' . Config::$dbName;
-
+                self::$connectionString = 'mysql:host=' . self::$host . ';dbname=' . self::$dbName;
                 self::$connection = new PDO(self::$connectionString, self::$user, self::$pass);
 
             } catch (PDOException $e) {
