@@ -1,0 +1,15 @@
+Options -Indexes
+RewriteEngine On
+
+# Force SSL Enable Below
+#RewriteCond %{SERVER_PORT} !^443$
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Base back to the base, incase you have a sub-directory for this
+RewriteBase /
+
+# Check if file is a real file in the system
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# If no real file rewrite to the index.php file.
+RewriteRule ^(.*)$ /index.php?v=$1 [QSA,L]
