@@ -7,4 +7,4 @@ Models are for data, and are comprised of a key and a default value along with s
 ## Methods
 Methods are actions in the api, for example a method would be create, update, or delete. The framework comes with a number of default methods. Methods can be created by adding a file to the methods folder and calling new Method() inside that.
 
-[![Powered by DartNode](https://app.test/branding/DN-Open-Source.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+[![Powered by DartNode](https://app.dartnode.com /branding/DN-Open-Source.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
